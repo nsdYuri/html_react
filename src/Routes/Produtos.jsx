@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { ListaProdutos } from "../Components/ListaProdutos";
 
 export default function Produtos(){
@@ -14,7 +15,7 @@ export default function Produtos(){
                 </tr>
                 </thead>
                 <tbody>
-                {ListaProdutos.map((produto,indice)=> {
+                {ListaProdutos.map((produto,indice)=> (
                     <tr key={indice}>
                         <td>{produto.id}</td>
                         <td>{produto.nome}</td>
@@ -22,7 +23,7 @@ export default function Produtos(){
                         <td><link to={`/editar/produtos/${produto.id}`}>Editar</link></td>
                     </tr>
 
-                })}
+                ))}
                 </tbody>
                 <tfoot>
                     <tr>

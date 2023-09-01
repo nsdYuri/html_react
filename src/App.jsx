@@ -1,16 +1,9 @@
 import { Outlet } from "react-router-dom"
 import Cabecalho from "./Components/Cabecalho";
-import Conteudo from "./Components/Conteudo";
 import Rodape from "./Components/Rodape";
-import logoReact from "./assets/react.svg";
 
 export default function App(){
 
-  //Criando props para ser transmitido para um dos componentes filhos.
-  let novoConteudo = "Nova notícia!";
-  
-  let altLogo = "Logomarca da Tecnologia React!";
-  
   return(
     <>
       {/* Crie um Cabeçalho com um h1 um título e uma lista com 3 itens. */}
