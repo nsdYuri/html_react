@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './index.css'
 
 //Bloco de rotas
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import EditarProdutos from './Routes/EditarProdutos.jsx'
-import Home from './Routes/home.jsx'
-import Produtos from './Routes/produtos.jsx'
+import Home from './Routes/Home.jsx'
+import Produtos from './Routes/Produtos.jsx'
 import Error404 from './Routes/Error404.jsx'
+import ExcluirProdutos from './Routes/ExcluirProdutos.jsx';
 
 //Criuando o objeto de rotas
 const router = createBrowserRouter([
@@ -17,7 +17,8 @@ const router = createBrowserRouter([
       children: [
         { path: '/', element: <Home />},
         { path: '/produtos', element: <Produtos />},
-        { path: '/editar/produtos/:id', element: <EditarProdutos />}
+        { path: '/editar/produtos/:id', element: <EditarProdutos />},
+        {path: '/excluir/produtos/:id', element: <ExcluirProdutos/>}
       ]
   },
 ])

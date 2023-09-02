@@ -1,4 +1,4 @@
-export default function Produtos(){
+export default function Home(){
     return(
         <div>Home</div>
     )

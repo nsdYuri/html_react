@@ -1,4 +1,4 @@
-export default function Produtos(){
+export default function Erro404(){
     return(
         <div>Error404</div>
     )
